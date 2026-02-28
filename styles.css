@@ -1,0 +1,226 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #1a1a1a;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+    }
+
+    nav a.active {
+      background: #555;
+      color: white;
+      padding: 5px 14px;
+      border-radius: 20px;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-login {
+      border: 1px solid #333;
+      background: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-register {
+      background: #4a90d9;
+      color: white;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .search-icon {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .main {
+      display: flex;
+      padding: 30px;
+      gap: 20px;
+      background: #d8d8d8;
+      min-height: 400px;
+    }
+
+    /* LEFT SIDE */
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 260px;
+      flex-shrink: 0;
+    }
+
+    .worker-img {
+      background: #bbb;
+      border-radius: 12px;
+      height: 160px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .worker-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* Placeholder if no image */
+    .worker-img-placeholder {
+      background: linear-gradient(135deg, #999, #ccc);
+      border-radius: 12px;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: white;
+    }
+
+    .card {
+      background: #888;
+      border-radius: 12px;
+      padding: 16px;
+      color: white;
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* RIGHT SIDE */
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about-title {
+      background: #b0b0b0;
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+
+    .about-title h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .about-title p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .offer-card {
+      background: #b0b0b0;
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+
+    .offer-card h3 {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .offer-card p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: white;
+    }
+
+    .footer-title {
+      text-align: center;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 25px;
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-btn.google  { background: #4285F4; }
+    .contact-btn.telegram { background: #26A5E4; }
+    .contact-btn.instagram { background: #E1306C; }
+    .contact-btn.whatsapp { background: #25D366; }
+
+    .contact-btn .icon {
+      font-size: 18px;
+    }
